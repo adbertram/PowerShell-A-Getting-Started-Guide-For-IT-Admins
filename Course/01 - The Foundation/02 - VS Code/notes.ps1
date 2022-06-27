@@ -3,4 +3,4 @@
 
 Get-Help
 
-Get-ChildItem
+gci
