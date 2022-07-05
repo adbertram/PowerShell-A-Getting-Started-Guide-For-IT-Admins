@@ -61,3 +61,28 @@ Get-Command *-Content
 # Get a specific command
 Get-Command -Name Get-Alias
 #endregion
+
+#region Help
+# Finding help for commands
+Get-Help Add-Content
+
+# Common sections of help for all commands
+
+# Examples are king!
+Get-Help Add-Content -Examples
+
+# General topics (about topics)
+Get-Help about_Core_Commands
+
+# Using wildcards (wildcards can typically be used to specify one or more characters)
+Get-Help -Name About*
+
+# Updating help
+# help gets stale. Need to keep it up to date
+# Sometimes works. Up to the module author
+
+##Look! error. Needs to update system-level files
+Update-Help
+
+# Need to run as administrator. how? why?
+#endregion
