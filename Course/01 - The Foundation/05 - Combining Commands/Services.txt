@@ -1,0 +1,8 @@
+BDESVC
+Dhcp
+EFS
+mpssvc
+RemoteRegistry
+Spooler
+WinRM
+wuauserv
