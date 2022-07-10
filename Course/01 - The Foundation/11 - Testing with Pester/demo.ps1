@@ -1,6 +1,4 @@
 #region Introducing Pester
-# Introducing Pester
-
 # Pester Basics
 
 # A Pester File
@@ -41,6 +39,6 @@ Describe 'IIS' {
     }
 }
 
-## Executing a Pester Test
+# Executing a Pester Test
 Invoke-Pester -Path '.\Course\01 - The Foundation\11 - Testing with Pester\sample.tests.ps1'
 #endregion

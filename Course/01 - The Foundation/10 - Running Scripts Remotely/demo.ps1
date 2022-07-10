@@ -69,7 +69,7 @@ $PSVersionTable
 
 Invoke-Command -ComputerName WEBSRV1 -ScriptBlock { $PSVersionTable }
 
-## Removing Sessions with Remove-PSSession
+# Removing Sessions with Remove-PSSession
 Get-PSSession | Remove-PSSession
 
 Get-PSSession
@@ -77,12 +77,12 @@ Get-PSSession
 #endregion
 
 #region Understanding PowerShell remoting Authentication
-## The Double Hop Problem
+# The Double Hop Problem
 Enter-PSSession -ComputerName WEBSRV1
 
 Get-ChildItem -Path '\\dc\c$'
 
-## Double Hopping with CredSSP
+# Double Hopping with CredSSP
 Enable-WSManCredSSP -Role Client -DelegateComputer WEBSRV1 -Force
 
 Invoke-Command -ComputerName WEBSRV1 -ScriptBlock { Enable-WSManCredSSP -Role Server }

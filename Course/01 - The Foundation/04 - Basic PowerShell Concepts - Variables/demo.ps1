@@ -63,7 +63,7 @@ $color = 'yellow'
 
 $color
 
-## use the variable cmdlets
+# use the variable cmdlets
 Set-Variable -Name color -Value 'blue'
 
 Get-Variable -Name color

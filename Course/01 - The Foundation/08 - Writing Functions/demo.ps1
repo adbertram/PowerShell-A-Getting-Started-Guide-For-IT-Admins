@@ -5,7 +5,7 @@ Get-Command -CommandType Cmdlet
 #endregion
 
 #region Basic Syntax
-## Defining a Function
+# Defining a Function
 function Install-Software { Write-Host 'I installed some software, Yippee!' }
 
 Install-Software
@@ -124,7 +124,7 @@ function Install-Software {
 $computers = @("SRV1", "SRV2", "SRV3")
 $computers | Install-Software -Version 2
 
-## Adding a process Block
+# Adding a process Block
 function Install-Software {
     param(
         [Parameter(Mandatory)]

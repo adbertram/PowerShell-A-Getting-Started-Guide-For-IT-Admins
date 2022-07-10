@@ -49,7 +49,7 @@ Get-ExecutionPolicy
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
-## Scripting in PowerShell
+# Scripting in PowerShell
 
 powershell_ise.exe
 

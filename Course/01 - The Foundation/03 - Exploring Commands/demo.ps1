@@ -80,9 +80,9 @@ Get-Help -Name About*
 # Updating help
 # help gets stale. Need to keep it up to date
 # Sometimes works. Up to the module author
-
-##Look! error. Needs to update system-level files
 Update-Help
 
-# Need to run as administrator. how? why?
+# In Windows PowerShell this must be run as administrator because of where the module
+# files are located.
+
 #endregion

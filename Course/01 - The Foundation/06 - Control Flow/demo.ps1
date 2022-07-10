@@ -38,7 +38,7 @@ if (Test-Connection -ComputerName $servers[0] -Quiet -Count 1) {
     Write-Error -Message "The server $($servers[0]) is not responding!"
 }
 
-## The elseif Statement
+# The elseif Statement
 
 if (Test-Connection -ComputerName $servers[0] -Quiet -Count 1) {
     if ($servers[0] –eq $problemServer) {
@@ -90,7 +90,7 @@ switch ($currentServer) {
         break
     }
     $servers[1] {
-        ## Check if server is online and get content at SRV2 path.
+        # Check if server is online and get content at SRV2 path.
         break
     }
     $servers[2] {
