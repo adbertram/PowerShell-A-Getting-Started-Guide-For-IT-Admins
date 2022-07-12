@@ -10,11 +10,13 @@ assertions
 
 # The describe Block
 Describe 'IIS' {
+
 }
 
 # The context Block
 Describe 'IIS' {
     Context 'Windows features' {
+
     }
 }
 
@@ -22,6 +24,7 @@ Describe 'IIS' {
 Describe 'IIS' {
     Context 'Windows features' {
         It 'installs the Web-Server Windows feature' {
+            
         }
     }
 }
@@ -34,7 +37,11 @@ Describe 'IIS' {
 Describe 'IIS' {
     Context 'Windows features' {
         It 'installs the Web-Server Windows feature' {
-            $parameters = @{}
+            $parameters = @{
+                ComputerName = 'WEBSRV1'
+                Name         = 'Web-Server'
+            }
+            (Get-WindowsFeature @parameters).Installed | Should -Be $true
         }
     }
 }
