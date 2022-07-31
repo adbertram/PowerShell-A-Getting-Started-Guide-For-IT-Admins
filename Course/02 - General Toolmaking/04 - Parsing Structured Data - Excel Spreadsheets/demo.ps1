@@ -34,6 +34,6 @@ foreach ($sheet in $excelSheets) {
 
 #region Adding data to spreadsheets
 # Process over time
-Get-Process | Select-Object -Property *, @{Name = 'Timestamp'; Expression = { Get-Date -Format 'MM-dd-yy hh:mm:ss' } } | Export-Excel $path -WorksheetName 'ProcessesOverTime'
+Get-Process | Select-Object -Property *, @{Name = 'Timestamp'; Expression = { Get-Date -Format 'MM-dd-yy hh:mm:ss' } } | Export-Excel $path -WorksheetName 'ProcessesOverTime' -Append
 
 #endregion
